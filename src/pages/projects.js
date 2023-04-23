@@ -5,7 +5,11 @@ import { motion } from "framer-motion"
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import adminDashboard from "../../public/images/projects/admin_dashboard_img.png"
+import fiverUi from "../../public/images/projects/fiver_ui_clone_img.png"
+import incomeExpenditureTracker from "../../public/images/projects/income_and_expenditure_tracker_img.png"
+import kanbanBoard from "../../public/images/projects/kanban_board_img.png"
+import realState from "../../public/images/projects/real_state_img.png"
 import TransitionEffect from "@/components/TransitionEffect"
 
 const FramerImage = motion(Image)
@@ -56,6 +60,33 @@ const FeaturedProject = ({ title, type, summary, img, link = "", github = "" }) 
 }
 
 const Projects = () => {
+    const projectLinks = {
+        adminDashboard: "https://responsive-admin-dashboard-azure.vercel.app/",
+        fiverUi: "https://fiver-clone-gamma.vercel.app/",
+        incomeExpenditureTracker: "https://income-and-expenditure-tracker.vercel.app/",
+        kanbanBoard: "https://kanban-board-woad.vercel.app/",
+        realState: "https://realstate-snowy.vercel.app/"
+    }
+
+    const gitHubLinks = {
+        adminDashboard: "https://github.com/rahul-srkr/Responsive-Admin-Dashboard",
+        fiverUi: "https://github.com/rahul-srkr/fiver-clone",
+        incomeExpenditureTracker: "https://github.com/rahul-srkr/income-and-expenditure-tracker",
+        kanbanBoard: "https://github.com/rahul-srkr/kanban-board",
+        realState: "https://github.com/rahul-srkr/realstate"
+    }
+
+    const projectsTitle = {
+        adminDashboard: "Responsive Admin Dashboard",
+        fiverUi: "Fiver UI Clone",
+        incomeExpenditureTracker: "Income & Expenditure Tracker",
+        kanbanBoard: "Kanban Board",
+        realState: "Real State App"
+    }
+
+    const featuredProjectsDescription = {
+        adminDashboard: "An admin dashboard is a web-based tool that allows administrators to monitor and manage various aspects of their organization's operations and data through a centralized and customizable interface. It typically displays key performance indicators (KPIs) in an easily understandable manner, provides access to detailed reports and analytics tools, data filtering and sorting."
+    }
     return (
         <>
             <Head>
@@ -65,69 +96,52 @@ const Projects = () => {
             <TransitionEffect />
             <main className="w-full mb-16 flex items-center justify-center flex-col dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Imagination Trumps Knowledge!" className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl" />
+                    <AnimatedText text="Innovative solutions for your digital needs!" className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl" />
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeaturedProject
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                            local currency."
+                                title={projectsTitle.adminDashboard}
+                                summary={featuredProjectsDescription.adminDashboard}
                                 type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
-                            />
-
-
-
-                        </div>
-                        <div className="col-span-6 sm:col-span-12">
-                            <Project
-                                title="Crypto Screener Application"
-                                type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
+                                img={adminDashboard}
+                                link={projectLinks.adminDashboard}
+                                github={gitHubLinks.adminDashboard}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                title="Crypto Screener Application"
-                                type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
-                            />
-                        </div>
-                        <div className="col-span-12">
-                            <FeaturedProject
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                            It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                            local currency."
-                                type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
+                                title={projectsTitle.fiverUi}
+                                type="Project"
+                                img={fiverUi}
+                                link={projectLinks.fiverUi}
+                                github={gitHubLinks.fiverUi}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                title="Crypto Screener Application"
-                                type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
+                                title={projectsTitle.incomeExpenditureTracker}
+                                type="Project"
+                                img={incomeExpenditureTracker}
+                                link={projectLinks.incomeExpenditureTracker}
+                                github={gitHubLinks.incomeExpenditureTracker}
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
-                                title="Crypto Screener Application"
-                                type="Featured Project"
-                                img={project1}
-                                link="/"
-                                github="/"
+                                title={projectsTitle.realState}
+                                type="Project"
+                                img={realState}
+                                link={projectLinks.realState}
+                                github={gitHubLinks.realState}
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                title={projectsTitle.kanbanBoard}
+                                type="Project"
+                                img={kanbanBoard}
+                                link={projectLinks.kanbanBoard}
+                                github={gitHubLinks.kanbanBoard}
                             />
                         </div>
 

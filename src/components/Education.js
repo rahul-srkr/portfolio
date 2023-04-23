@@ -31,61 +31,30 @@ const Education = () => {
         }
     )
     return (
-        <div className="my-64 sm:my-32 lg:my-44">
+        <div className="mt-64 sm:mt-32 lg:mt-44">
             <h2 className="font-bold text-7xl mb-32 w-full text-center md:text-5xl xs:text-3xl md:mb-16">Education</h2>
 
             <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
                 <motion.div style={{ scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]" />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
                     <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
+                        type="Bachelor Of Commerce"
+                        time="2015-2018"
+                        place="Pt. Ravishankar Shukla University in Raipur, Chhattisgarh"
+                        info="Graduates with a BCom degree can pursue a wide range of career paths, including roles in finance, accounting, marketing, human resources, and general management."
 
 
                     />
 
                     <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
+                        type="Post Graduate Diploma in Computer Application"
+                        time="2018-2020"
+                        place="Pt. Ravishankar Shukla University in Raipur, Chhattisgarh"
+                        info="These may include roles in software development, computer networking, database administration, artificial intelligence, and other related fields."
 
 
                     />
 
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-
-
-                    />
-
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-
-
-                    />
-
-                    <Details
-                        type="Bachelor Of Science In Computer Science"
-                        time="2016-2020"
-                        place="Massachusetts Institute Of Technology (MIT)"
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                        Intelligence."
-
-
-                    />
                 </ul>
             </div>
         </div>

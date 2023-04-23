@@ -76,7 +76,7 @@ const Articles = () => {
             <TransitionEffect />
             <main className="w-full flex flex-col items-center mb-16 justify-between overflow-hidden dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text="Words Can Change The World!" className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl" />
+                    <AnimatedText text="Where creativity meets technology!" className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl" />
                     <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
                         <FeaturedArticle
                             title="Build A Custom Pagination Component In Reactjs From Scratch"
