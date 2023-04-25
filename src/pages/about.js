@@ -40,7 +40,7 @@ const About = () => {
     return (
         <>
             <Head>
-                <title>CodeBucks | About Page</title>
+                <title>Rahul | About</title>
                 <meta name="description" content="any description" />
             </Head>
             <TransitionEffect />

@@ -70,7 +70,7 @@ const Articles = () => {
     return (
         <>
             <Head>
-                <title>CodeBucks | Articles Page</title>
+                <title>Rahul | Articles</title>
                 <meta name="description" content="any description" />
             </Head>
             <TransitionEffect />

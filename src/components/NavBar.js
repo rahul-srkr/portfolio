@@ -43,6 +43,14 @@ const NavBar = ({ isOpen, setIsOpen }) => {
     const handleClick = () => {
         setIsOpen(!isOpen);
     }
+
+    const socialLinks = {
+        twitter: "https://twitter.com/rahulsrkr29",
+        linkdin: "https://www.linkedin.com/in/rahul-sarkar-211610273/",
+        pinterest: "https://pin.it/1hNolAb",
+        github: "https://github.com/rahul-srkr",
+        dribble: "https://dribbble.com/rahulsrkr29"
+    }
     return (
         <header
             className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-6"
@@ -64,7 +72,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
 
                 <nav className="flex items-center justify-center flex-wrap">
                     <motion.a
-                        href="https://twitter.com"
+                        href={socialLinks.twitter}
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -73,7 +81,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                         <TwitterIcon />
                     </motion.a>
                     <motion.a
-                        href="/"
+                        href={socialLinks.github}
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -82,7 +90,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                         <GithubIcon />
                     </motion.a>
                     <motion.a
-                        href="/"
+                        href={socialLinks.linkdin}
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -91,7 +99,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                         <LinkedInIcon />
                     </motion.a>
                     <motion.a
-                        href="/"
+                        href={socialLinks.pinterest}
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -100,7 +108,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                         <PinterestIcon />
                     </motion.a>
                     <motion.a
-                        href="/"
+                        href={socialLinks.dribble}
                         target="_blank"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -134,7 +142,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
 
                         <nav className="flex items-center justify-center flex-wrap mt-2">
                             <motion.a
-                                href="https://twitter.com"
+                                href={socialLinks.twitter}
                                 target="_blank"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -143,7 +151,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                                 <TwitterIcon />
                             </motion.a>
                             <motion.a
-                                href="/"
+                                href={socialLinks.github}
                                 target="_blank"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -152,7 +160,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                                 <GithubIcon />
                             </motion.a>
                             <motion.a
-                                href="/"
+                                href={socialLinks.linkdin}
                                 target="_blank"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -161,7 +169,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                                 <LinkedInIcon />
                             </motion.a>
                             <motion.a
-                                href="/"
+                                href={socialLinks.pinterest}
                                 target="_blank"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -170,7 +178,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                                 <PinterestIcon />
                             </motion.a>
                             <motion.a
-                                href="/"
+                                href={socialLinks.dribble}
                                 target="_blank"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
