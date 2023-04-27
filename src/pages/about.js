@@ -51,7 +51,7 @@ const About = () => {
                         <div className="flex-col flex items-center justify-center leading-8 xs:text-xs sm:text-center">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Hello, I&apos;m Rahul Sarkar, a web developer with 4 years of experience building beautiful and engaging websites and web applications. with a passion for creating beautiful, functional,and user-centered digital experiences, I specialize in crafting intuitive and seamless user interfaces using the latest front-end technologies like HTML5, CSS3, JavaScript, and React.
+                                Hello, I&apos;m Rahul Sarkar, a web developer with 2 years of working experience as a freelancer building beautiful and engaging websites and web applications. with a passion for creating functional and user-centered digital experiences, I specialize in crafting intuitive and seamless user interfaces using the latest front-end technologies like HTML5, CSS3, JavaScript, and React.
                             </p>
                             <p className="font-medium my-4">
                                 My passion for web development started in college where I first discovered the power of coding and building websites. Since then, I love working on challenging projects, solving problems and creating intuitive, enjoyable experiences for users.
@@ -64,19 +64,19 @@ const About = () => {
                         <div className="flex items-center justify-between mt-32">
                             <div className="flex flex-col justify-center items-center">
                                 <span className="inline-block text-6xl font-bold md:text-5xl sm:text-4xl xs:text-3xl">
-                                    <Animatenumbers value={50} />+
+                                    <Animatenumbers value={5} />+
                                 </span>
                                 <h2 className="text-xl mt-6 font-medium text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">satisfied clients</h2>
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <span className="inline-block text-6xl font-bold md:text-5xl sm:text-4xl xs:text-3xl">
-                                    <Animatenumbers value={40} />+
+                                    <Animatenumbers value={7} />+
                                 </span>
                                 <h2 className="text-xl mt-6 font-medium text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">projects completed</h2>
                             </div>
                             <div className="flex flex-col justify-center items-center">
                                 <span className="inline-block text-6xl font-bold md:text-5xl sm:text-4xl xs:text-3xl">
-                                    <Animatenumbers value={4} />+
+                                    <Animatenumbers value={2} />+
                                 </span>
                                 <h2 className="text-xl mt-6 font-medium text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">years of experience</h2>
                             </div>

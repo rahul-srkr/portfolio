@@ -50,9 +50,7 @@ const Education = () => {
                         type="Post Graduate Diploma in Computer Application"
                         time="2018-2020"
                         place="Pt. Ravishankar Shukla University in Raipur, Chhattisgarh"
-                        info="These may include roles in software development, computer networking, database administration, artificial intelligence, and other related fields."
-
-
+                        info="These may include roles in software development, information of technology, database management system, and other related fields."
                     />
 
                 </ul>

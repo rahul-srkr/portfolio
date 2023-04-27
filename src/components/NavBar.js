@@ -4,7 +4,6 @@ import { useRouter } from "next/router"
 import useThemeSwitcher from "./hooks/useThemeSwitcher"
 import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from "./Icons"
 import Logo from "./Logo"
-import { useState } from "react"
 
 const CustomLink = ({ href, title, className = "" }) => {
     const router = useRouter()
@@ -38,7 +37,6 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 const NavBar = ({ isOpen, setIsOpen }) => {
 
     const [mode, setMode] = useThemeSwitcher()
-    // const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -67,7 +65,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                     <CustomLink href="/" title="Home" className="mr-4 relative" toggle={handleClick} />
                     <CustomLink href="/about" title="About" className="mx-4 relative" toggle={handleClick} />
                     <CustomLink href="/projects" title="Projects" className="mx-4 relative" toggle={handleClick} />
-                    <CustomLink href="/articles" title="Articles" className="ml-4 relative" toggle={handleClick} />
+                    {/* <CustomLink href="/articles" title="Articles" className="ml-4 relative" toggle={handleClick} /> */}
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
@@ -137,7 +135,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
                             <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
                             <CustomMobileLink href="/about" title="About" className="" toggle={handleClick} />
                             <CustomMobileLink href="/projects" title="Projects" className="" toggle={handleClick} />
-                            <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick} />
+                            {/* <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick} /> */}
                         </nav>
 
                         <nav className="flex items-center justify-center flex-wrap mt-2">
