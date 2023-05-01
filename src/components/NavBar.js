@@ -44,7 +44,7 @@ const NavBar = ({ isOpen, setIsOpen }) => {
 
     const socialLinks = {
         twitter: "https://twitter.com/rahulsrkr29",
-        linkdin: "https://www.linkedin.com/in/rahul-sarkar-211610273/",
+        linkdin: "https://www.linkedin.com/in/rahul-sarkar-34a236274/",
         pinterest: "https://pin.it/1hNolAb",
         github: "https://github.com/rahul-srkr",
         dribble: "https://dribbble.com/rahulsrkr29"
