@@ -31,7 +31,7 @@ export default function Home() {
               <p className='my-4 text-sm font-medium lg:text-lg md:text-base sm:text-lg xs:text-xs'>Hi, I&apos;m a full-stack developer with experience in developing scalable web applications using Node.js, React.js, and other related technologies.I am committed to transforming concepts into cutting-edge web applications and ensuring that the applications I build are efficient, secure, and user-friendly.Explore my latest projects, showcasing my expertise.</p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link
-                  href="/rahul-resume.pdf"
+                  href="/rahul-web-dev.pdf"
                   target="_blank"
                   className='flex items-center bg-dark text-light p-2 px-5 rounded-lg  font-semibold hover:bg-light hover:text-dark border-solid border-transparent border-2 hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-1 md:px-3 md:text-sm' download={true}
                 >
